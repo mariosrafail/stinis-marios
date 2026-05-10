@@ -1,0 +1,8 @@
+[build]
+publish = "."
+
+[[redirects]]
+from = "/*"
+to = "https://test.outrage.ink/:splat"
+status = 301
+force = true
