@@ -1,8 +1,2 @@
 [build]
 publish = "."
-
-[[redirects]]
-from = "/*"
-to = "."
-status = 301
-force = true
