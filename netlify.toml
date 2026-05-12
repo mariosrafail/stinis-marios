@@ -3,6 +3,6 @@ publish = "."
 
 [[redirects]]
 from = "/*"
-to = "https://test.outrage.ink/:splat"
+to = "."
 status = 301
 force = true
