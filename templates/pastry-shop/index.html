@@ -1,0 +1,291 @@
+﻿<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Template ζαχαροπλαστείου με premium αισθητική, animations και πλήρως λειτουργική online παραγγελία." />
+  <title>Sugar Bloom Patisserie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topline">
+    <div class="container topline-inner">
+      <p>Τηλέφωνο Delivery: <strong>210 5527618</strong></p>
+      <p>Πατησίων 339Γ, Αθήνα 11144</p>
+    </div>
+  </div>
+
+  <header class="header" id="home">
+    <div class="container nav-wrap">
+      <a class="logo" href="#home" aria-label="Sugar Bloom">
+        <span class="logo-script">Sugar Bloom</span>
+        <span class="logo-sub">Patisserie since 1969</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Άνοιγμα μενού">☰</button>
+
+      <nav class="nav" id="siteNav">
+        <a href="#home">Αρχική</a>
+        <a href="#story">Ιστορία</a>
+        <a href="#categories">Προϊόντα</a>
+        <a href="#events">Εκδηλώσεις</a>
+        <a href="#catalog">Κατάλογος</a>
+        <a href="#order">Παραγγελία</a>
+        <a href="#contact">Επικοινωνία</a>
+      </nav>
+
+      <button class="cart-button" id="cartButton" type="button" aria-label="Άνοιγμα καλαθιού">
+        Καλάθι <span id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-deco hero-deco-left"></div>
+      <div class="hero-deco hero-deco-right"></div>
+      <div class="container hero-grid">
+        <article class="hero-copy reveal">
+          <p class="eyebrow">Χειροποίητες δημιουργίες με υπογραφή</p>
+          <h1>Το ζαχαροπλαστείο που κάνει κάθε στιγμή γιορτή</h1>
+          <p>Από παιδικές τούρτες μέχρι εντυπωσιακά γλυκά για γάμο και εταιρικά events. Premium αισθητική, σταθερή ποιότητα, γεύσεις που μένουν.</p>
+          <div class="hero-actions">
+            <a class="btn btn-solid" href="#order">Κάνε Παραγγελία</a>
+            <a class="btn btn-outline" href="#catalog">Δες Κατάλογο</a>
+          </div>
+          <div class="hero-points">
+            <span>Αυθημερόν delivery</span>
+            <span>Custom τούρτες</span>
+            <span>Συσκευασία δώρου</span>
+          </div>
+        </article>
+        <div class="hero-media reveal">
+          <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=1200&q=80" alt="Πολύχρωμα γλυκά βιτρίνας" />
+        </div>
+      </div>
+    </section>
+
+    <section class="story" id="story">
+      <div class="container split">
+        <div class="story-media reveal">
+          <img src="https://images.unsplash.com/photo-1606850246021-cf8ea2d78b31?auto=format&fit=crop&w=1200&q=80" alt="Πάγκος ζαχαροπλαστείου" />
+        </div>
+        <article class="story-text reveal">
+          <h2>Μια γλυκιά ιστορία, από γενιά σε γενιά</h2>
+          <p>Ξεκινήσαμε ως μικρό οικογενειακό εργαστήριο και εξελιχθήκαμε σε σημείο αναφοράς για τούρτες, παγωτά και επιδόρπια εκδηλώσεων. Κάθε παραγωγή γίνεται καθημερινά με φρέσκιες πρώτες ύλες.</p>
+          <ul>
+            <li>100% φρέσκια παραγωγή κάθε μέρα</li>
+            <li>Δική μας κρέμα patisserie</li>
+            <li>Άμεση εξυπηρέτηση και τηλεφωνικές παραγγελίες</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="categories" id="categories">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Γλυκές Περιστάσεις</h2>
+          <p>Επέλεξε θεματική και δες ιδέες που ξεχωρίζουν.</p>
+        </div>
+        <div class="categories-grid">
+          <article class="category-card reveal">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80" alt="Τούρτα γενεθλίων" />
+            <h3>Γενέθλια</h3>
+          </article>
+          <article class="category-card reveal">
+            <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?auto=format&fit=crop&w=900&q=80" alt="Τούρτα γάμου" />
+            <h3>Γάμος</h3>
+          </article>
+          <article class="category-card reveal">
+            <img src="https://images.unsplash.com/photo-1464349153735-7db50ed83c84?auto=format&fit=crop&w=900&q=80" alt="Βάπτιση γλυκά" />
+            <h3>Βάπτιση</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog" id="catalog">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Κατάλογος Προϊόντων</h2>
+          <p>Πάγωτα, πάστες, βουτήματα και signature επιδόρπια.</p>
+        </div>
+        <div class="products-grid" id="productsGrid">
+          <article class="product-card reveal" data-id="prod1" data-name="Family Cake Strawberry" data-price="24.90">
+            <img src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&w=900&q=80" alt="Τούρτα φράουλα" />
+            <div class="product-content">
+              <h3>Family Cake Strawberry</h3>
+              <p>Τούρτα 8 ατόμων με φρέσκια φράουλα.</p>
+              <div class="product-row">
+                <strong>24.90€</strong>
+                <button class="add-btn" type="button">+ Προσθήκη</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-id="prod2" data-name="Profiterole Deluxe" data-price="5.80">
+            <img src="https://images.unsplash.com/photo-1559622214-f8a9850965bb?auto=format&fit=crop&w=900&q=80" alt="Προφιτερόλ" />
+            <div class="product-content">
+              <h3>Profiterole Deluxe</h3>
+              <p>Σοκολάτα bitter, βανίλια Μαδαγασκάρης.</p>
+              <div class="product-row">
+                <strong>5.80€</strong>
+                <button class="add-btn" type="button">+ Προσθήκη</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-id="prod3" data-name="Gelato Pistachio" data-price="4.20">
+            <img src="https://images.unsplash.com/photo-1560008581-09826d1de69e?auto=format&fit=crop&w=900&q=80" alt="Παγωτό pistachio" />
+            <div class="product-content">
+              <h3>Gelato Pistachio</h3>
+              <p>Αυθεντικό παγωτό φιστίκι Σικελίας.</p>
+              <div class="product-row">
+                <strong>4.20€</strong>
+                <button class="add-btn" type="button">+ Προσθήκη</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-id="prod4" data-name="Butter Cookies Box" data-price="12.00">
+            <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=900&q=80" alt="Βουτήματα" />
+            <div class="product-content">
+              <h3>Butter Cookies Box</h3>
+              <p>Κουτί 500γρ με βουτήματα βανίλιας.</p>
+              <div class="product-row">
+                <strong>12.00€</strong>
+                <button class="add-btn" type="button">+ Προσθήκη</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-id="prod5" data-name="Cupcakes Party Set (6τμχ)" data-price="15.50">
+            <img src="https://images.unsplash.com/photo-1587668178277-295251f900ce?auto=format&fit=crop&w=900&q=80" alt="Cupcakes" />
+            <div class="product-content">
+              <h3>Cupcakes Party Set (6τμχ)</h3>
+              <p>Ανάμεικτες γεύσεις για birthday table.</p>
+              <div class="product-row">
+                <strong>15.50€</strong>
+                <button class="add-btn" type="button">+ Προσθήκη</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-id="prod6" data-name="Mini Tarts Selection" data-price="9.40">
+            <img src="https://images.unsplash.com/photo-1488477304112-4944851de03d?auto=format&fit=crop&w=900&q=80" alt="Ταρτάκια" />
+            <div class="product-content">
+              <h3>Mini Tarts Selection</h3>
+              <p>6 τραγανά τάρτ με κρέμα και φρούτα.</p>
+              <div class="product-row">
+                <strong>9.40€</strong>
+                <button class="add-btn" type="button">+ Προσθήκη</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="events" id="events">
+      <div class="container split">
+        <article class="events-text reveal">
+          <h2>Candy Bar & Event Setup</h2>
+          <p>Στήνουμε ολοκληρωμένα dessert tables για βαπτίσεις, γάμους και εταιρικές βραδιές, με προσωπική επιμέλεια και custom θεματική.</p>
+          <a class="btn btn-solid" href="#contact">Ζήτα Προσφορά Event</a>
+        </article>
+        <div class="events-media reveal">
+          <img src="https://images.unsplash.com/photo-1464306076886-da185f6a9d05?auto=format&fit=crop&w=1200&q=80" alt="Dessert table σε εκδήλωση" />
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Τι λένε οι πελάτες</h2>
+        </div>
+        <div class="reviews-grid">
+          <article class="review reveal">
+            <p>"Η τούρτα βάπτισης ήταν ακριβώς όπως την ονειρευτήκαμε. Άριστη εξυπηρέτηση και τέλεια γεύση."</p>
+            <h4>Εύα Κ.</h4>
+          </article>
+          <article class="review reveal">
+            <p>"Παραγγείλαμε online για γραφείο και ήρθαν όλα στην ώρα τους, άψογα συσκευασμένα."</p>
+            <h4>Νίκος Π.</h4>
+          </article>
+          <article class="review reveal">
+            <p>"Το καλύτερο προφιτερόλ στην Αθήνα. Σταθερή ποιότητα κάθε φορά."</p>
+            <h4>Μαρία Τ.</h4>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="order" id="order">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Online Παραγγελία</h2>
+          <p>Ολοκλήρωσε γρήγορα την παραγγελία σου με delivery ή παραλαβή.</p>
+        </div>
+        <div class="checkout-layout">
+          <div class="checkout-card reveal">
+            <h3>Στοιχεία Πελάτη</h3>
+            <form id="checkoutForm">
+              <label>Ονοματεπώνυμο<input id="customerName" type="text" required placeholder="π.χ. Γιάννης Παπαδόπουλος" /></label>
+              <label>Τηλέφωνο<input id="customerPhone" type="tel" required placeholder="69XXXXXXXX" /></label>
+              <label>Διεύθυνση<input id="customerAddress" type="text" required placeholder="Οδός, αριθμός, περιοχή" /></label>
+              <label>Τρόπος Παραλαβής
+                <select id="deliveryMethod" required>
+                  <option value="delivery">Delivery (+2.50€)</option>
+                  <option value="pickup">Παραλαβή από κατάστημα</option>
+                </select>
+              </label>
+              <label>Σχόλια<textarea id="orderNotes" rows="3" placeholder="Οδηγίες παράδοσης, ειδικές προτιμήσεις..."></textarea></label>
+              <button class="btn btn-solid" type="submit">Ολοκλήρωση Παραγγελίας</button>
+            </form>
+            <p class="checkout-result" id="checkoutResult" aria-live="polite"></p>
+          </div>
+
+          <aside class="cart-panel reveal" id="cartPanel">
+            <h3>Το Καλάθι σου</h3>
+            <div class="cart-items" id="cartItems">
+              <p class="empty">Δεν έχεις προσθέσει προϊόντα ακόμα.</p>
+            </div>
+            <div class="cart-totals">
+              <p>Υποσύνολο <strong id="subtotal">0.00€</strong></p>
+              <p>Μεταφορικά <strong id="shipping">2.50€</strong></p>
+              <p class="grand">Σύνολο <strong id="total">2.50€</strong></p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container footer-grid">
+      <div>
+        <h3>Sugar Bloom Patisserie</h3>
+        <p>Πατησίων 339Γ, Αθήνα 11144</p>
+      </div>
+      <div>
+        <h4>Επικοινωνία</h4>
+        <p>210 5527618</p>
+        <p>orders@sugarbloom.gr</p>
+      </div>
+      <div>
+        <h4>Ωράριο</h4>
+        <p>Δευ - Σαβ: 08:00 - 22:30</p>
+        <p>Κυριακή: 09:00 - 21:00</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

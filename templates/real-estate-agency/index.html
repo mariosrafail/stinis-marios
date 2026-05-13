@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Template μεσιτικού γραφείου με premium αισθητική, δυνατά animations και mobile-first εμπειρία." />
+  <title>UrbanNest Realty | Μεσιτικό Γραφείο</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>+30 210 3620100, +30 22950 34365</span>
+      <span>sideris_j@windowslive.com</span>
+      <span>€ EUR | EL</span>
+    </div>
+  </div>
+
+  <header class="header" id="home">
+    <div class="container nav-wrap">
+      <a href="#home" class="logo"><span>UrbanNest</span> Realty</a>
+      <button class="menu-toggle" type="button" aria-label="Άνοιγμα μενού">☰</button>
+      <nav class="nav" id="siteNav">
+        <a href="#about">Η εταιρεία μας</a>
+        <a href="#listings">Ακίνητα</a>
+        <a href="#assign">Ανάθεση</a>
+        <a href="#search">Ζήτηση</a>
+        <a href="#contact">Επικοινωνία</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content reveal">
+        <h1>UrbanNest Realty</h1>
+        <p>Βρες το κατάλληλο ακίνητο για αγορά ή ενοικίαση με έξυπνα φίλτρα και άμεση υποστήριξη.</p>
+
+        <form class="search-panel" id="searchForm">
+          <select id="filterDeal">
+            <option value="all">Πώληση / Ενοικίαση</option>
+            <option value="sale">Πώληση</option>
+            <option value="rent">Ενοικίαση</option>
+          </select>
+
+          <select id="filterType">
+            <option value="all">Όλοι οι τύποι</option>
+            <option value="house">Κατοικία</option>
+            <option value="apartment">Διαμέρισμα</option>
+            <option value="hotel">Ξενοδοχείο</option>
+            <option value="villa">Βίλα</option>
+          </select>
+
+          <select id="filterRegion">
+            <option value="all">Όλες οι περιοχές</option>
+            <option value="attica">Υπόλοιπο Αττικής</option>
+            <option value="athens">Αθήνα</option>
+            <option value="porto-rafti">Πόρτο Ράφτη</option>
+          </select>
+
+          <input id="filterSubarea" type="text" placeholder="Επίλεξε υποπεριοχή" />
+          <button type="submit">Βρείτε ακίνητο</button>
+        </form>
+
+        <a class="all-btn" href="#listings">Όλα τα ακίνητά μας</a>
+      </div>
+    </section>
+
+    <section class="code-search" id="search">
+      <div class="container reveal">
+        <form id="codeSearchForm" class="code-search-inner">
+          <input id="codeInput" type="text" placeholder="Αναζήτηση με κωδικό" />
+          <button type="submit">Αναζήτηση</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="listings" id="listings">
+      <div class="container">
+        <div class="listings-grid" id="listingsGrid">
+          <article class="property-card reveal" data-code="BP1001" data-deal="sale" data-type="house" data-region="attica" data-subarea="Ωρωπός">
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1000&q=80" alt="Μονοκατοικία προς πώληση" />
+            <div class="overlay">
+              <h3>Μονοκατοικία προς πώληση</h3>
+              <p>Υπόλοιπο Αττικής, Ωρωπός</p>
+              <strong>€ 385.000</strong>
+            </div>
+            <div class="meta"><span>220 τ.μ.</span><span>Δωμάτια 7</span><span>Μπάνια 2</span></div>
+            <a href="#">Λεπτομέρειες</a>
+          </article>
+
+          <article class="property-card reveal" data-code="BP1002" data-deal="sale" data-type="house" data-region="attica" data-subarea="Ωρωπός">
+            <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1000&q=80" alt="Μονοκατοικία" />
+            <div class="overlay"><h3>Μονοκατοικία προς πώληση</h3><p>Υπόλοιπο Αττικής, Ωρωπός</p><strong>€ 3.000.000</strong></div>
+            <div class="meta"><span>1.100 τ.μ.</span><span>Δωμάτια 6</span><span>Μπάνια 6</span></div>
+            <a href="#">Λεπτομέρειες</a>
+          </article>
+
+          <article class="property-card reveal" data-code="BP1003" data-deal="sale" data-type="villa" data-region="attica" data-subarea="Ωρωπός">
+            <img src="https://images.unsplash.com/photo-1613977257593-4875fcbf220f?auto=format&fit=crop&w=1000&q=80" alt="Βίλα" />
+            <div class="overlay"><h3>Βίλα προς πώληση</h3><p>Υπόλοιπο Αττικής, Ωρωπός</p><strong>€ 850.000</strong></div>
+            <div class="meta"><span>385 τ.μ.</span><span>Δωμάτια 4</span><span>Μπάνια 3</span></div>
+            <a href="#">Λεπτομέρειες</a>
+          </article>
+
+          <article class="property-card reveal" data-code="BP1004" data-deal="sale" data-type="apartment" data-region="athens" data-subarea="Νότια Προάστια">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=80" alt="Διαμέρισμα" />
+            <div class="overlay"><h3>Διαμέρισμα προς πώληση</h3><p>Αθήνα - Νότια Προάστια</p><strong>€ 1.850.000</strong></div>
+            <div class="meta"><span>265 τ.μ.</span><span>Δωμάτια 5</span><span>Μπάνια 4</span></div>
+            <a href="#">Λεπτομέρειες</a>
+          </article>
+
+          <article class="property-card reveal" data-code="BP1005" data-deal="sale" data-type="hotel" data-region="attica" data-subarea="Ωρωπός">
+            <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1000&q=80" alt="Ξενοδοχείο" />
+            <div class="overlay"><h3>Ξενοδοχείο προς πώληση</h3><p>Υπόλοιπο Αττικής, Ωρωπός</p><strong>€ 3.500.000</strong></div>
+            <div class="meta"><span>1.100 τ.μ.</span><span>Χώροι 60</span><span>3.182 €/τ.μ.</span></div>
+            <a href="#">Λεπτομέρειες</a>
+          </article>
+
+          <article class="property-card reveal" data-code="BP1006" data-deal="sale" data-type="house" data-region="porto-rafti" data-subarea="Μαρκόπουλο">
+            <img src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=1000&q=80" alt="Μονοκατοικία Πόρτο Ράφτη" />
+            <div class="overlay"><h3>Μονοκατοικία προς πώληση</h3><p>Μαρκόπουλο, Πόρτο Ράφτη</p><strong>€ 510.000</strong></div>
+            <div class="meta"><span>240 τ.μ.</span><span>Δωμάτια 5</span><span>Μπάνια 1</span></div>
+            <a href="#">Λεπτομέρειες</a>
+          </article>
+        </div>
+        <p id="noResults" class="no-results">Δεν βρέθηκαν ακίνητα με αυτά τα κριτήρια.</p>
+      </div>
+    </section>
+
+    <section class="assign" id="assign">
+      <div class="container assign-wrap reveal">
+        <h2>Θέλετε να αναθέσετε το ακίνητό σας;</h2>
+        <p>Στείλτε τα στοιχεία σας και η ομάδα μας θα επικοινωνήσει για εκτίμηση και στρατηγική προβολής.</p>
+        <a href="#contact">Ξεκινήστε τώρα</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container footer-grid">
+      <article>
+        <h3>UrbanNest Realty</h3>
+        <p>Καλώς ήλθατε στη μεσιτική και κατασκευαστική εταιρία μας, με παρουσία στο κέντρο της Αθήνας και στον Ωρωπό.</p>
+      </article>
+      <article>
+        <h4>Πλοήγηση</h4>
+        <a href="#about">Η εταιρεία μας</a>
+        <a href="#listings">Ακίνητα</a>
+        <a href="#assign">Ανάθεση</a>
+        <a href="#search">Ζήτηση</a>
+        <a href="#contact">Επικοινωνία</a>
+      </article>
+      <article>
+        <h4>Επικοινωνία</h4>
+        <p>+302103620100, +302295034365</p>
+        <p>+306947279812</p>
+        <p>Πανεπιστημίου 39, Αθήνα 10564</p>
+        <p>SIDERIS_J@WINDOWSLIVE.COM</p>
+      </article>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

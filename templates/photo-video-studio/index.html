@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Photo/Video studio template με cinematic αισθητική, animations και mobile-first εμπειρία." />
+  <title>P56 Studio | Photo & Video Space</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header" id="home">
+    <div class="container nav-wrap">
+      <a class="logo" href="#home"><span>P56</span> STUDIO</a>
+      <button class="menu-toggle" type="button" aria-label="Άνοιγμα μενού">☰</button>
+      <nav class="nav" id="siteNav">
+        <a href="#space">Space</a>
+        <a href="#equipment">Equipment</a>
+        <a href="#rules">Studio Rules</a>
+        <a href="#contact">Contact</a>
+        <a href="#offers">Offers</a>
+        <a href="#booking">Book</a>
+      </nav>
+      <a class="book-btn" href="#booking">BOOK</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner reveal">
+        <h1>PHOTO<br />STUDIO</h1>
+        <ul>
+          <li>> 90m² professional space</li>
+          <li>> Syntagma, Athens</li>
+          <li>> 1-24 hours online booking</li>
+        </ul>
+        <div class="hero-actions">
+          <a class="btn btn-outline" href="#booking">BOOK NOW</a>
+          <div class="price-badge"><strong>15€</strong><span>from 12+ hours</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing" id="offers">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>PRICING</h2>
+          <p>Prices excluding VAT 24%</p>
+        </div>
+        <div class="price-cards">
+          <article class="price-card red reveal"><h3>1H</h3><strong>30€</strong></article>
+          <article class="price-card blue reveal"><small>POPULAR</small><h3>2H+</h3><strong>20€</strong></article>
+          <article class="price-card green reveal"><h3>8H+</h3><strong>18€</strong></article>
+          <article class="price-card purple reveal"><h3>12H+</h3><strong>15€</strong></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits" id="equipment">
+      <div class="container benefits-grid">
+        <article class="benefit reveal"><h3>PROFESSIONAL EQUIPMENT</h3><p>Modern lights, backdrops and all the essentials.</p></article>
+        <article class="benefit reveal"><h3>FLEXIBLE HOURS</h3><p>From 1 hour to full day bookings, 7 days a week.</p></article>
+        <article class="benefit reveal"><h3>ONLINE BOOKING</h3><p>Instant confirmation and easy booking workflow.</p></article>
+      </div>
+    </section>
+
+    <section class="space" id="space">
+      <div class="container space-grid">
+        <article class="space-copy reveal">
+          <h2>THE SPACE</h2>
+          <p>90m² PROFESSIONAL STUDIO</p>
+          <ul>
+            <li>3m ceiling height for overhead lighting</li>
+            <li>White cyclorama wall</li>
+            <li>Makeup & changing area</li>
+            <li>Free WiFi & air conditioning</li>
+          </ul>
+        </article>
+        <div class="gallery">
+          <img class="reveal" src="https://images.unsplash.com/photo-1529078155058-5d716f45d604?auto=format&fit=crop&w=900&q=80" alt="Studio lobby" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1604014238170-4def1e4e6fcf?auto=format&fit=crop&w=900&q=80" alt="Studio kitchen" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=900&q=80" alt="Makeup area" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1497219055242-93359eeed651?auto=format&fit=crop&w=900&q=80" alt="Shooting area" />
+        </div>
+      </div>
+    </section>
+
+    <section class="booking" id="booking">
+      <div class="container booking-wrap">
+        <article class="booking-card reveal">
+          <h2>BOOK NOW</h2>
+          <form id="bookingForm">
+            <label>Ονοματεπώνυμο<input id="name" required type="text" placeholder="π.χ. Άννα Σταύρου" /></label>
+            <label>Email<input id="email" required type="email" placeholder="you@email.com" /></label>
+            <label>Ημερομηνία<input id="date" required type="date" /></label>
+            <label>Ώρα<select id="time" required><option value="">Επίλεξε ώρα</option></select></label>
+            <label>Διάρκεια
+              <select id="duration" required>
+                <option value="">Επίλεξε διάρκεια</option>
+                <option>1 ώρα</option>
+                <option>2 ώρες</option>
+                <option>4 ώρες</option>
+                <option>8 ώρες</option>
+                <option>12+ ώρες</option>
+              </select>
+            </label>
+            <button class="btn btn-solid" type="submit">CONFIRM BOOKING</button>
+          </form>
+          <p id="bookingResult" class="booking-result" aria-live="polite"></p>
+        </article>
+        <aside class="slots-card reveal">
+          <h3>Available Slots</h3>
+          <div id="slotsList" class="slots-list"></div>
+          <p>Need custom production setup? Call us: <a href="tel:+306948624262">+30 694 862 4262</a></p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container contact-grid">
+        <article class="contact-card reveal">
+          <h2>GET IN TOUCH</h2>
+          <p><strong>LOCATION</strong><br />Perikleous 56, 10560<br />Athens, Greece</p>
+          <p><strong>EMAIL</strong><br />info@p56.gr</p>
+          <p><strong>PHONE</strong><br />+30 6948624262</p>
+          <p><strong>HOURS</strong><br />Available 24 hours<br />By appointment only</p>
+        </article>
+        <article class="contact-card reveal" id="rules">
+          <h2>STUDIO RULES</h2>
+          <p>Arrival 10 minutes earlier, keep shared spaces clean, and respect booking end times.</p>
+          <ul>
+            <li>No smoking inside the studio</li>
+            <li>Equipment damage policy applies</li>
+            <li>Outside catering on request</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 P56 Studio</p>
+      <a href="#booking">BOOK NOW</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

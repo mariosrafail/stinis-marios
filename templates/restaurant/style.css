@@ -1,0 +1,113 @@
+:root {
+  --food-black: #000;
+  --food-red: #f4262d;
+  --food-white: #f7f7f7;
+  --food-gray: #e9e9e9;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: Inter, sans-serif; background: #fff; color: #101010; overflow-x: hidden; }
+a { text-decoration: none; color: inherit; }
+button { font: inherit; }
+
+.food-header {
+  position: sticky; top: 0; z-index: 40; display: flex; justify-content: space-between; align-items: center; padding: 18px 26px; background: rgba(0,0,0,.96); color: #fff;
+}
+.food-logo {
+  font-family: "Bebas Neue", sans-serif; font-size: 3rem; line-height: .82; background: var(--food-red); padding: 10px 12px 8px; letter-spacing: .03em;
+}
+.food-menu-btn {
+  width: 58px; height: 58px; border: 0; background: transparent; color: #fff; font-size: 2rem; cursor: pointer;
+}
+.food-drawer {
+  position: fixed; top: 0; right: -320px; width: 300px; height: 100vh; background: #111; color: #fff; z-index: 60; display: flex; flex-direction: column; padding: 100px 24px 24px; gap: 18px; transition: right .35s ease;
+}
+.food-drawer.open { right: 0; }
+.food-drawer a { font-family: "Bebas Neue", sans-serif; font-size: 2rem; letter-spacing: .04em; }
+
+.food-hero {
+  background: radial-gradient(circle at 50% 20%, rgba(244,38,45,.15), transparent 18%), linear-gradient(180deg, rgba(0,0,0,.94), rgba(5,5,5,.96)), linear-gradient(135deg, #1a1a1a 0%, #070707 100%);
+  color: #fff; padding: 30px 24px 80px;
+}
+.hero-head { text-align: center; max-width: 1200px; margin: 0 auto 34px; }
+.food-kicker { text-transform: uppercase; letter-spacing: .18em; font-size: .88rem; color: rgba(255,255,255,.72); }
+.food-kicker.dark { color: #666; }
+.hero-head h1 { font-family: "Bebas Neue", sans-serif; font-size: clamp(4rem, 10vw, 7.5rem); letter-spacing: .04em; margin-top: 14px; }
+.food-slider {
+  max-width: 1500px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, minmax(240px, 1fr)); gap: 28px; align-items: end;
+}
+.food-item { text-align: center; }
+.food-item h2 { font-family: "Bebas Neue", sans-serif; font-size: 2.2rem; margin-top: 18px; letter-spacing: .04em; }
+.tilt-card { transition: transform .28s ease; }
+.tilt-card:hover { transform: translateY(-10px) rotate(-1deg); }
+.tilt-card.active { transform: translateY(8px); }
+.food-shape { margin: 0 auto; position: relative; }
+.food-shape.burger { width: 220px; height: 220px; }
+.food-shape.burger::before,
+.food-shape.burger::after { content: ""; position: absolute; left: 50%; transform: translateX(-50%); border-radius: 999px; }
+.food-shape.burger::before { top: 12px; width: 180px; height: 74px; background: linear-gradient(180deg, #f2be72, #d9963f); box-shadow: inset 0 10px 0 rgba(255,255,255,.16); }
+.food-shape.burger::after { bottom: 18px; width: 180px; height: 34px; background: linear-gradient(180deg, #d38f37, #b77728); }
+.food-shape.burger.single {
+  background: radial-gradient(circle at 50% 62%, #4a250a 0 42px, transparent 43px), radial-gradient(circle at 50% 48%, #76a750 0 46px, transparent 47px), radial-gradient(circle at 50% 55%, #f2f0d8 0 52px, transparent 53px);
+}
+.food-shape.burger.double {
+  background: radial-gradient(circle at 50% 68%, #4a250a 0 42px, transparent 43px), radial-gradient(circle at 50% 54%, #ffcf4f 0 52px, transparent 53px), radial-gradient(circle at 50% 48%, #7cae52 0 44px, transparent 45px), radial-gradient(circle at 50% 40%, #4a250a 0 42px, transparent 43px), radial-gradient(circle at 50% 30%, #d23e26 0 48px, transparent 49px);
+}
+.food-shape.fries {
+  width: 190px; height: 220px; background: radial-gradient(circle at 50% 58%, #4a250a 0 42px, transparent 43px), radial-gradient(circle at 50% 42%, #ffcf4f 0 56px, transparent 57px);
+}
+.food-shape.fries::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, transparent 20%, #f3c24e 20% 27%, transparent 27% 35%, #f3c24e 35% 42%, transparent 42% 50%, #f3c24e 50% 57%, transparent 57% 65%, #f3c24e 65% 72%, transparent 72%); clip-path: polygon(26% 2%, 72% 2%, 83% 34%, 17% 34%); }
+.food-shape.corndog {
+  width: 220px; height: 170px; border-radius: 24px; background: linear-gradient(135deg, #161616, #2b2b2b); transform: rotate(-10deg); box-shadow: 0 18px 34px rgba(0,0,0,.35);
+}
+.food-shape.corndog::before { content: ""; position: absolute; left: 40px; top: 44px; width: 140px; height: 22px; background: linear-gradient(90deg, #d08f2d, #f1ba56); border-radius: 999px; box-shadow: 0 32px 0 0 #d08f2d; }
+.food-shape.corndog::after { content: ""; position: absolute; left: 24px; top: 40px; width: 160px; height: 62px; background: repeating-linear-gradient(135deg, transparent 0 12px, rgba(255,255,255,.7) 12px 16px, transparent 16px 28px), linear-gradient(180deg, rgba(244,38,45,.92), rgba(255,199,34,.92)); opacity: .9; clip-path: polygon(0 18%, 100% 0, 100% 82%, 0 100%); }
+
+.stores { background: #efefef; padding: 0 24px 90px; }
+.stores-shell { max-width: 1440px; margin: 0 auto; }
+.stores-title { text-align: center; padding-top: 40px; }
+.stores-title h2 { display: inline-block; background: #000; color: #fff; font-family: "Bebas Neue", sans-serif; font-size: clamp(3rem, 7vw, 5rem); letter-spacing: .05em; padding: 14px 100px; transform: translateY(-26px); }
+.store-tabs { display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; margin-bottom: 30px; }
+.tab { border: 0; padding: 16px 28px; background: #fff; font-family: "Bebas Neue", sans-serif; font-size: 1.8rem; letter-spacing: .04em; }
+.tab.active { background: var(--food-red); color: #fff; }
+.stores-grid { display: grid; grid-template-columns: .95fr 1.05fr; gap: 24px; align-items: start; }
+.store-photo { background: #d8d5d1; padding: 20px; }
+.photo-card {
+  min-height: 420px; background: linear-gradient(180deg, rgba(21,21,21,.76), rgba(85,65,50,.9)), linear-gradient(135deg, #403427, #181818); position: relative; overflow: hidden;
+}
+.photo-card::before {
+  content: ""; position: absolute; left: 10%; right: 10%; top: 18%; height: 86px; background: rgba(247,247,247,.9); box-shadow: 0 0 18px rgba(255,255,255,.45);
+}
+.photo-card::after {
+  content: ""; position: absolute; inset: auto 8% 0 8%; height: 44%; background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+}
+.window-sign {
+  position: absolute; left: 50%; top: 25%; transform: translateX(-50%); font-family: "Bebas Neue", sans-serif; font-size: 3.8rem; letter-spacing: .06em; color: #111;
+}
+.store-info { background: #f4f4f4; padding: 28px; min-height: 420px; }
+.store-info h3 { font-size: 2rem; margin-bottom: 16px; }
+.store-info p { font-weight: 700; margin-bottom: 18px; }
+.store-info ul { list-style: none; display: grid; gap: 12px; margin-bottom: 26px; font-size: 1.15rem; }
+.store-info strong { font-size: 1.7rem; }
+
+.food-story {
+  display: grid; grid-template-columns: .92fr 1.08fr; gap: 28px; max-width: 1440px; margin: 0 auto; padding: 90px 24px 110px;
+}
+.story-left h2 { font-family: "Bebas Neue", sans-serif; font-size: clamp(3rem, 6vw, 5rem); line-height: .94; letter-spacing: .03em; margin-top: 10px; }
+.story-right p { font-size: 1.1rem; color: #333; max-width: 760px; }
+.story-right p + p { margin-top: 18px; }
+.food-cta { display: inline-flex; align-items: center; justify-content: center; min-height: 58px; padding: 0 24px; margin-top: 26px; background: var(--food-red); color: #fff; font-weight: 800; }
+
+.reveal { opacity: 0; transform: translateY(26px); transition: .7s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.food-delay-1 { transition-delay: .12s; }
+.food-delay-2 { transition-delay: .24s; }
+
+@media (max-width: 1050px) {
+  .food-slider, .stores-grid, .food-story { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 780px) {
+  .food-slider, .stores-grid, .food-story { grid-template-columns: 1fr; }
+  .stores-title h2 { padding: 12px 24px; }
+  .food-logo { font-size: 2.2rem; }
+}

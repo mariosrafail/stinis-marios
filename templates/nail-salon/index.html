@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nail salon template με premium αισθητική, pricing και online booking." />
+  <title>Nail Atelier | Stinis Digital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="top-bar">
+    <div class="container top-inner">
+      <span>📍 Locate Our Salon</span>
+      <a href="tel:+306901234567">📞 Phone: 6901234567</a>
+      <a href="mailto:office@nailatelier-demo.gr">✉ Email: office@nailatelier-demo.gr</a>
+      <div class="lang">🇬🇷 🇺🇸</div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="#home"><span>💅</span> NAIL ATELIER</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Άνοιγμα μενού">☰</button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#prices">Price List</a>
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="book-btn" href="#booking">Book Now</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-slider" id="heroSlider">
+        <article class="hero-slide is-active" data-title="Welcome to our salon!" data-sub="Experts at bringing out your inner glow." data-cta="EXPLORE SERVICES" data-link="#services">
+          <div class="slide-bg bg-1" aria-hidden="true"></div>
+        </article>
+        <article class="hero-slide" data-title="Premium Nail Art & Care" data-sub="Modern techniques with elegant, long-lasting results." data-cta="VIEW PRICE LIST" data-link="#prices">
+          <div class="slide-bg bg-2" aria-hidden="true"></div>
+        </article>
+        <article class="hero-slide" data-title="Self-care starts here" data-sub="Manicure, pedicure, lashes and waxing in one place." data-cta="BOOK APPOINTMENT" data-link="#booking">
+          <div class="slide-bg bg-3" aria-hidden="true"></div>
+        </article>
+
+        <button class="hero-arrow left" id="heroPrev" aria-label="Προηγούμενο">←</button>
+        <button class="hero-arrow right" id="heroNext" aria-label="Επόμενο">→</button>
+
+        <div class="hero-center">
+          <h1 id="heroTitle">Welcome to our salon!</h1>
+          <p id="heroSub">Experts at bringing out your inner glow.</p>
+          <a class="hero-cta" id="heroCta" href="#services">EXPLORE SERVICES</a>
+        </div>
+
+        <div class="hero-dots" id="heroDots"></div>
+      </div>
+    </section>
+
+    <section class="services section reveal" id="services">
+      <div class="container">
+        <div class="bubble-grid">
+          <article class="bubble-card reveal">
+            <div class="bubble-image b1"></div>
+            <div class="bubble-overlay violet">
+              <h3>Nail Care</h3>
+              <p>Quality products and flawless techniques for healthy, beautiful nails.</p>
+              <a href="#prices">See more</a>
+            </div>
+          </article>
+          <article class="bubble-card reveal">
+            <div class="bubble-image b2"></div>
+            <div class="bubble-overlay pink">
+              <h3>Eyelashes</h3>
+              <p>Fresh, expressive look with precision and elegance in every detail.</p>
+              <a href="#prices">See more</a>
+            </div>
+          </article>
+          <article class="bubble-card reveal">
+            <div class="bubble-image b3"></div>
+            <div class="bubble-overlay orchid">
+              <h3>Waxing</h3>
+              <p>Smooth result with gentle care and strict hygiene protocols.</p>
+              <a href="#prices">See more</a>
+            </div>
+          </article>
+        </div>
+
+        <article class="about-block reveal" id="about">
+          <div class="about-copy">
+            <p class="eyebrow">Quality to perfection with a personal touch</p>
+            <h2>Loved & Trusted Beauty Salon</h2>
+            <p>We offer manicure, pedicure, nail art, lash styling and waxing services, always with premium hygiene standards and personalized attention for every client.</p>
+          </div>
+          <div class="about-photo"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="pricing section" id="prices">
+      <div class="container pricing-wrap reveal">
+        <p class="eyebrow center">Pricing Plans</p>
+        <h2>ARTISTRY . PASSION . STYLE</h2>
+
+        <div class="price-panel">
+          <h3>Color OPI Only</h3>
+          <ul>
+            <li><span>Lacquer OPI only</span><strong>€7</strong></li>
+            <li><span>Gelcolor OPI only</span><strong>€12</strong></li>
+          </ul>
+
+          <h3>Manicure</h3>
+          <ul>
+            <li><span>Manicure w/ lacquer OPI</span><strong>€15</strong></li>
+            <li><span>Manicure w/ gelcolor OPI</span><strong>€22</strong></li>
+          </ul>
+
+          <h3>Pedicure</h3>
+          <ul>
+            <li><span>Pedicure without color</span><strong>€20</strong></li>
+            <li><span>Pedicure w/ lacquer OPI</span><strong>€22</strong></li>
+            <li><span>Pedicure w/ gelcolor OPI</span><strong>€25</strong></li>
+          </ul>
+
+          <a href="#booking" class="book-main">Book An Appointment</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking section reveal" id="booking">
+      <div class="container booking-grid">
+        <article class="booking-copy">
+          <h2>Κλείσε Ραντεβού σε 1 λεπτό</h2>
+          <p>Διάλεξε υπηρεσία, ημερομηνία και ώρα. Θα λάβεις άμεσα επιβεβαίωση.</p>
+        </article>
+
+        <form id="bookingForm" class="booking-form">
+          <select id="serviceField" required>
+            <option value="">Επιλογή υπηρεσίας</option>
+            <option>Manicure</option>
+            <option>Pedicure</option>
+            <option>Nail Art</option>
+            <option>Eyelashes</option>
+            <option>Waxing</option>
+          </select>
+          <input type="date" id="dateField" required />
+          <div class="slots" id="slots"></div>
+          <input type="hidden" id="slotField" required />
+          <input type="text" id="nameField" placeholder="Ονοματεπώνυμο" required />
+          <input type="tel" id="phoneField" placeholder="Τηλέφωνο" required />
+          <button type="submit">ΕΠΙΒΕΒΑΙΩΣΗ</button>
+          <p id="bookingResult"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo" href="#home"><span>💅</span> NAIL ATELIER</a>
+        <p>Premium nail & beauty experience with a personal touch.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="tel:+306901234567">+30 690 123 4567</a>
+        <a href="mailto:office@nailatelier-demo.gr">office@nailatelier-demo.gr</a>
+        <p>Agiou Markou 12, Peristeri</p>
+      </div>
+      <div>
+        <h4>Open Hours</h4>
+        <p>Mon-Fri: 10:00 - 20:00</p>
+        <p>Saturday: 10:00 - 17:00</p>
+        <p>Sunday: Closed</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

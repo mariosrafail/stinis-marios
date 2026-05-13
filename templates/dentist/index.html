@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Οδοντίατρος Νίκος Ραπαδόπουλος | Demo</title>
+  <meta name="description" content="Σύγχρονη οδοντιατρική φροντίδα με online ραντεβού, εμπειρία και εξατομικευμένη προσέγγιση." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="top-strip">📞 Τηλ. 210 1234 567</div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand">
+        <span class="logo-icon">🦷</span>
+        <span>
+          <strong>ΟΔΟΝΤΙΑΤΡΟΣ</strong>
+          <small>Νίκος Ραπαδόπουλος</small>
+        </span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Μενού">☰</button>
+
+      <nav class="nav" id="nav">
+        <a href="#">Αρχική</a>
+        <a href="#services">Υπηρεσίες</a>
+        <a href="#about">Ο Γιατρός</a>
+        <a href="#faq">Συχνές Ερωτήσεις</a>
+        <a href="#contact">Επικοινωνία</a>
+        <a href="#form" class="btn btn-small btn-appointment">ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>ΥΓΙΕΣ & ΛΑΜΠΕΡΟ ΧΑΜΟΓΕΛΟ!</h1>
+          <p>Σύγχρονη Οδοντιατρική Φροντίδα</p>
+          <a href="#form" class="btn btn-appointment">ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ</a>
+        </div>
+        <div class="hero-photo" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="usp-row container">
+      <article><span>🦷</span><h3>Έμπειρος Οδοντίατρος</h3></article>
+      <article><span>🛠️</span><h3>Σύγχρονος Εξοπλισμός</h3></article>
+      <article><span>✨</span><h3>Φιλικό Περιβάλλον</h3></article>
+    </section>
+
+    <section class="panel" id="services">
+      <div class="container">
+        <h2>Οι Υπηρεσίες μας</h2>
+        <div class="service-grid">
+          <article class="service-card"><div class="svc svc1"></div><h3>Καθαρισμός Δοντιών</h3></article>
+          <article class="service-card"><div class="svc svc2"></div><h3>Λεύκανση Δοντιών</h3></article>
+          <article class="service-card"><div class="svc svc3"></div><h3>Εμφυτεύματα</h3></article>
+          <article class="service-card"><div class="svc svc4"></div><h3>Αισθητική Οδοντιατρική</h3></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section container" id="about">
+      <article class="about-card">
+        <h2>Γνωρίστε τον Γιατρό</h2>
+        <p>Ο Νίκος Ραπαδόπουλος διαθέτει πολυετή εμπειρία στην προληπτική και αισθητική οδοντιατρική. Συνδυάζει εξατομικευμένη προσέγγιση με σύγχρονες τεχνικές για υγιές και φυσικό χαμόγελο.</p>
+        <a href="#" class="btn">ΜΑΘΕΤΕ ΠΕΡΙΣΣΟΤΕΡΑ</a>
+        <div class="about-photo" aria-hidden="true"></div>
+      </article>
+    </section>
+
+    <section class="booking-section container" id="form">
+      <div class="booking-section-head">
+        <span class="eyebrow">Online Booking</span>
+        <h2>Οργανώστε το ραντεβού σας εύκολα</h2>
+        <p>Διαλέξτε υπηρεσία, δείτε τη συνήθη διάρκεια και κλείστε σε ώρα που ταιριάζει στο είδος της θεραπείας.</p>
+      </div>
+      <aside class="form-card booking-card">
+        <h3>Κλείστε Ραντεβού Σήμερα</h3>
+        <p class="booking-intro">Επιλέξτε υπηρεσία και θα δείτε διάρκεια, τι χρειάζεται πριν το ραντεβού και ποιες ώρες είναι πραγματικά διαθέσιμες.</p>
+        <form id="bookingForm" class="booking-form">
+          <input class="field-half" type="text" name="fullName" placeholder="Όνομα" required />
+          <input class="field-half" type="tel" name="phone" placeholder="Τηλέφωνο" required />
+
+          <select id="serviceSelect" class="field-half" name="service" required>
+            <option value="">Επιλέξτε Υπηρεσία</option>
+            <option value="exam">Έλεγχος & πρώτη εκτίμηση</option>
+            <option value="cleaning">Καθαρισμός δοντιών</option>
+            <option value="whitening">Λεύκανση στο ιατρείο</option>
+            <option value="extraction">Χειρουργική εξαγωγή / φρονιμίτης</option>
+            <option value="implant">Consultation για εμφύτευμα</option>
+            <option value="emergency">Επείγον περιστατικό / πόνος</option>
+          </select>
+
+          <input class="field-half" type="date" id="appointmentDate" name="appointmentDate" required />
+
+          <div class="booking-service-card" id="serviceInfo" hidden>
+            <div class="booking-pill-row">
+              <span class="booking-pill">
+                <strong>Διάρκεια</strong>
+                <span id="serviceDuration">-</span>
+              </span>
+              <span class="booking-pill">
+                <strong>Τύπος ραντεβού</strong>
+                <span id="serviceVisitType">-</span>
+              </span>
+            </div>
+            <div class="booking-note">
+              <strong>Τι να γνωρίζετε:</strong>
+              <p id="servicePrep">-</p>
+            </div>
+          </div>
+
+          <div class="conditional-field" id="xrayBlock" hidden>
+            <p class="field-label">Έχετε πρόσφατη πανοραμική ακτινογραφία τελευταίου 6μήνου;</p>
+            <div class="choice-row">
+              <label><input type="radio" name="recentXray" value="yes" /> Ναι</label>
+              <label><input type="radio" name="recentXray" value="no" checked /> Όχι</label>
+            </div>
+            <p class="field-hint" id="xrayHint">Αν δεν υπάρχει πρόσφατη πανοραμική, ίσως ζητηθεί πριν οριστικοποιηθεί χειρουργικό ραντεβού.</p>
+          </div>
+
+          <div class="time-block">
+            <div class="time-header">
+              <strong>Ώρα ραντεβού</strong>
+              <span id="timeHint">Διαλέξτε πρώτα υπηρεσία και ημερομηνία.</span>
+            </div>
+            <div class="time-slots" id="timeSlots"></div>
+            <input type="hidden" id="selectedTime" name="selectedTime" required />
+          </div>
+
+          <textarea name="notes" rows="4" placeholder="Σύντομο σχόλιο, συμπτώματα ή τι θέλετε να συζητήσετε"></textarea>
+
+          <div class="booking-summary" id="bookingSummary" hidden>
+            <strong>Σύνοψη επιλογής</strong>
+            <p id="bookingSummaryText"></p>
+          </div>
+
+          <button type="submit" class="btn btn-appointment">ΑΠΟΣΤΟΛΗ ΑΙΤΗΜΑΤΟΣ</button>
+        </form>
+      </aside>
+    </section>
+
+    <section class="faq-section container" id="faq">
+      <h2>Συχνές Ερωτήσεις</h2>
+      <div class="faq-list">
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            Πόσο συχνά πρέπει να κάνω καθαρισμό;
+          </button>
+          <div class="faq-answer">
+            <p>Συνήθως κάθε 6 μήνες. Αν υπάρχει περιοδοντικό ιστορικό, προτείνουμε συχνότερο έλεγχο.</p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            Η λεύκανση πονάει;
+          </button>
+          <div class="faq-answer">
+            <p>Η διαδικασία είναι ανώδυνη. Σε ορισμένες περιπτώσεις υπάρχει ήπια ευαισθησία για 24-48 ώρες.</p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            Δέχεστε επείγοντα περιστατικά;
+          </button>
+          <div class="faq-answer">
+            <p>Ναι, κατόπιν τηλεφωνικής επικοινωνίας προσπαθούμε για άμεσο ραντεβού την ίδια ημέρα.</p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            Γίνεται πληρωμή με κάρτα;
+          </button>
+          <div class="faq-answer">
+            <p>Ναι, δεχόμαστε μετρητά, κάρτα και δυνατότητα δόσεων σε επιλεγμένες θεραπείες.</p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            Πόσο διαρκεί ένα πρώτο ραντεβού;
+          </button>
+          <div class="faq-answer">
+            <p>Περίπου 30-45 λεπτά με πλήρη έλεγχο, αξιολόγηση και εξατομικευμένο πλάνο θεραπείας.</p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            Τι κάνω αν έχω έντονο πόνο δοντιού;
+          </button>
+          <div class="faq-answer">
+            <p>Επικοινώνησε άμεσα με το ιατρείο. Μην πάρεις αντιβίωση χωρίς ιατρική οδηγία.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="bottom-grid container" id="contact">
+      <article class="testimonial" id="testimonials">
+        <h2>Εμπειρίες Ασθενών</h2>
+        <div class="quote-box">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=260&q=80" alt="Ασθενής" />
+          <div>
+            <p class="quote" data-quote>Εξαιρετικός οδοντίατρος! Πολύ προσεκτικός και επεξηγηματικός. Το χαμόγελό μου είναι όπως το ήθελα!</p>
+            <strong data-author>Μαρία Κ.</strong>
+          </div>
+        </div>
+        <div class="dots">
+          <button class="dot active" data-dot="0"></button>
+          <button class="dot" data-dot="1"></button>
+          <button class="dot" data-dot="2"></button>
+        </div>
+      </article>
+
+      <aside class="contact-card">
+        <h2>Επικοινωνία</h2>
+        <ul>
+          <li>📍 Οδός Παράδεισου 123, Αθήνα</li>
+          <li>📞 Τελ. 210 1234 567</li>
+          <li>🕒 Δευ - Παρ: 9:00 - 19:00</li>
+          <li>✉️ info@odontiatros.gr</li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 ΟΔΟΝΤΙΑΤΡΟΣ Νίκος Ραπαδόπουλος</p>
+      <a href="../../index.html">Κατασκευή ιστοσελίδας</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

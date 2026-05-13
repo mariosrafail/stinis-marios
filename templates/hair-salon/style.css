@@ -1,0 +1,88 @@
+:root {
+  --salon-bg: #f8f3f4;
+  --salon-surface: #fffdfd;
+  --salon-pink: #d98da0;
+  --salon-rose: #b45d79;
+  --salon-text: #33272d;
+  --salon-muted: #7b6a70;
+  --salon-border: rgba(180, 93, 121, 0.18);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: Inter, sans-serif; background: var(--salon-bg); color: var(--salon-text); line-height: 1.65; overflow-x: hidden; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; }
+.topbar { background: #050505; color: #fff; padding: 10px 28px; display: flex; justify-content: space-between; align-items: center; }
+.socials { display: flex; gap: 16px; font-weight: 700; letter-spacing: .04em; }
+.topbar-cta { border: 1px solid rgba(255,255,255,.26); padding: 10px 16px; }
+.salon-header { background: rgba(255,255,255,.92); backdrop-filter: blur(12px); padding: 18px 28px; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 20px; position: sticky; top: 0; z-index: 30; }
+.nav-trigger { background: transparent; border: 0; font-size: 2rem; cursor: pointer; color: var(--salon-text); }
+.salon-logo { text-align: center; justify-self: center; }
+.salon-nav { justify-self: end; }
+.salon-logo strong { display: block; font-family: "Cormorant Garamond", serif; font-size: clamp(2.4rem, 4vw, 3.5rem); font-weight: 600; letter-spacing: .03em; }
+.salon-logo small { color: var(--salon-muted); font-size: 1.05rem; letter-spacing: .04em; }
+.salon-nav { display: flex; gap: 24px; font-size: .95rem; }
+.salon-hero { position: relative; margin: 0 24px; min-height: 68vh; border-radius: 0 0 22px 22px; overflow: hidden; }
+.hero-image { position: absolute; inset: 0; background: linear-gradient(rgba(51,39,45,.22), rgba(51,39,45,.28)), radial-gradient(circle at 72% 24%, rgba(255,255,255,.12), transparent 18%), linear-gradient(115deg, #7c5c4b 0%, #b48e79 24%, #7e6256 40%, #d9bfab 57%, #8a695d 74%, #c8aa97 100%); }
+.hero-image::before { content:""; position:absolute; inset:0; background: linear-gradient(90deg, rgba(45,28,34,.26), transparent 45%); }
+.hero-image::after { content:""; position:absolute; left:6%; bottom:-8%; width:44%; height:88%; background: radial-gradient(circle at 70% 18%, rgba(255,240,240,.76), transparent 18%), linear-gradient(180deg, rgba(72,52,52,.22), rgba(30,20,22,.4)); border-radius: 48% 40% 20% 20% / 20% 20% 10% 10%; filter: blur(1px); opacity:.72; }
+.hero-overlay { position: relative; z-index: 2; max-width: 880px; min-height: 68vh; margin: 0 auto; padding: 90px 24px 110px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #fff; }
+.salon-kicker, .section-mini { text-transform: uppercase; letter-spacing: .2em; font-size: .84rem; color: var(--salon-rose); font-weight: 700; }
+.hero-overlay .salon-kicker { color: rgba(255,255,255,.76); }
+.hero-overlay h1 { font-size: clamp(3rem, 6vw, 5.4rem); line-height: .98; letter-spacing: -.04em; margin: 14px 0 18px; }
+.hero-overlay p:last-of-type { max-width: 700px; font-size: 1.14rem; }
+.salon-actions { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; margin-top: 30px; }
+.salon-btn { min-height: 58px; padding: 0 26px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid transparent; }
+.salon-btn.primary { background: rgba(255,255,255,.16); color: #fff; border-color: rgba(255,255,255,.34); backdrop-filter: blur(8px); }
+.salon-btn.secondary { background: #fff; color: var(--salon-text); }
+.anchor-bar { background: #e9e2df; margin: 0 24px; display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; padding: 18px 20px; color: #5f5257; }
+.anchor-bar a { padding: 6px 0; }
+.salon-section { max-width: 1240px; margin: 0 auto; padding: 86px 24px; }
+.split { display: grid; grid-template-columns: 1.05fr .95fr; gap: 40px; align-items: center; }
+.copy-card h2, .section-heading h2, .location-card h2, .booking-band h2 { font-family: "Cormorant Garamond", serif; font-size: clamp(2.5rem, 5vw, 4rem); line-height: .96; margin: 10px 0 18px; font-weight: 600; }
+.copy-card p { color: var(--salon-muted); margin-bottom: 18px; font-size: 1.04rem; }
+.gallery-stack { display: grid; gap: 16px; }
+.gallery-card { background: linear-gradient(135deg, rgba(217,141,160,.22), rgba(255,255,255,.85)); border-radius: 28px; min-height: 220px; box-shadow: 0 16px 36px rgba(153, 99, 118, .14); }
+.gallery-card.tall { min-height: 360px; background: linear-gradient(135deg, #f0d1d8, #faf6f7 48%, #e9bcc9); }
+.gallery-card.soft { background: linear-gradient(135deg, #efdbe1, #ffffff); }
+.gallery-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.section-heading.center { text-align: center; }
+.service-grid { margin-top: 34px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.service-grid article, .location-card, .map-card, .team-grid article, .faq-list details { background: var(--salon-surface); border: 1px solid var(--salon-border); border-radius: 24px; box-shadow: 0 14px 36px rgba(177,105,128,.08); }
+.service-grid article { padding: 26px; }
+.service-grid h3, .team-grid h3 { margin-bottom: 10px; font-size: 1.2rem; }
+.service-grid p, .location-card p, .location-card li, .team-grid p, .faq-list p { color: var(--salon-muted); }
+.location-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 24px; align-items: stretch; }
+.location-card { padding: 32px; }
+.location-card ul { padding-left: 18px; margin-top: 18px; display: grid; gap: 10px; }
+.map-card { min-height: 320px; background: linear-gradient(135deg, #ecd9df, #ffffff 42%, #f4e7ea); position: relative; overflow: hidden; }
+.map-card::before, .map-card::after { content:""; position:absolute; border-radius: 999px; background: rgba(180,93,121,.18); }
+.map-card::before { width: 220px; height: 220px; right: 8%; top: 10%; }
+.map-card::after { width: 130px; height: 130px; left: 14%; bottom: 14%; }
+.team-grid { margin-top: 34px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.team-grid article { padding: 22px; }
+.team-photo { height: 240px; border-radius: 20px; margin-bottom: 16px; background: linear-gradient(180deg, #ead7dd, #fff); }
+.team-photo.one { background: linear-gradient(180deg, #f0dce2, #fff 70%, #e8c0cb); }
+.team-photo.two { background: linear-gradient(180deg, #eecbd6, #fff 70%, #e0b4c2); }
+.team-photo.three { background: linear-gradient(180deg, #f4e1e6, #fff 68%, #dba4b6); }
+.faq-list { margin-top: 32px; display: grid; gap: 16px; }
+.faq-list details { padding: 22px 24px; }
+.faq-list summary { cursor: pointer; font-weight: 700; }
+.faq-list p { margin-top: 12px; }
+.booking-band { max-width: 1240px; margin: 0 auto 90px; background: linear-gradient(135deg, #e5c2cc, #f7eef1 60%, #fff); border: 1px solid var(--salon-border); border-radius: 30px; padding: 36px 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity .8s ease, transform .8s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.delay-1 { transition-delay: .08s; }
+.delay-2 { transition-delay: .16s; }
+@media (max-width: 1080px) {
+  .split, .location-grid { grid-template-columns: 1fr; }
+  .service-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 860px) {
+  .salon-header { grid-template-columns: 52px 1fr; }
+  .salon-nav { grid-column: 1 / -1; display: none; flex-wrap: wrap; padding-top: 8px; }
+  .salon-nav.open { display: flex; }
+  .team-grid, .service-grid { grid-template-columns: 1fr; }
+  .hero-overlay { padding-top: 70px; }
+  .booking-band { flex-direction: column; align-items: flex-start; }
+}

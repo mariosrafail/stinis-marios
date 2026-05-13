@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Template φούρνου με premium αισθητική, δυνατά animations και mobile-first σχεδιασμό." />
+  <title>Stacho Bakery | Φούρνος</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <p>+30 210 6926286</p>
+      <p>info@stachobakery.gr</p>
+      <p>Αγίου Μελετίου 120, Αθήνα</p>
+    </div>
+  </div>
+
+  <header class="header" id="home">
+    <div class="container nav-wrap">
+      <a href="#home" class="brand" aria-label="Stacho Bakery">
+        <span class="brand-main">Stacho</span>
+        <span class="brand-sub">artisan bakery</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Άνοιγμα μενού">☰</button>
+      <nav class="nav" id="siteNav">
+        <a href="#company">Η Εταιρία</a>
+        <a href="#products">Προϊόντα</a>
+        <a href="#catering">Catering</a>
+        <a href="#horeca">Horeca</a>
+        <a href="#news">Νέα</a>
+        <a href="#contact">Επικοινωνία</a>
+      </nav>
+      <a href="#contact" class="cta-link">Προσφορά</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-track" id="heroTrack">
+        <article class="hero-slide is-active" style="--bg:url('https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1800&q=80')">
+          <div class="hero-overlay"></div>
+          <div class="container hero-content reveal">
+            <h1>Φροντίδα για ποιότητα ζωής</h1>
+            <p>Φρεσκοψημένο ψωμί και χειροποίητα αρτοσκευάσματα, κάθε μέρα από τις 05:00.</p>
+            <a href="#products" class="btn btn-solid">Δείτε Προϊόντα</a>
+          </div>
+        </article>
+        <article class="hero-slide" style="--bg:url('https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&fit=crop&w=1800&q=80')">
+          <div class="hero-overlay"></div>
+          <div class="container hero-content reveal">
+            <h1>Παράδοση που συνεχίζεται από το 1965</h1>
+            <p>Συνδυάζουμε παραδοσιακές τεχνικές με σύγχρονες προδιαγραφές παραγωγής.</p>
+            <a href="#company" class="btn btn-solid">Η Ιστορία Μας</a>
+          </div>
+        </article>
+        <article class="hero-slide" style="--bg:url('https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=1800&q=80')">
+          <div class="hero-overlay"></div>
+          <div class="container hero-content reveal">
+            <h1>Κέικ, βουτήματα, κριτσίνια & cookies</h1>
+            <p>Ιδανικά για το σπίτι, το γραφείο, το σχολείο ή τον επαγγελματικό σας χώρο.</p>
+            <a href="#catering" class="btn btn-solid">Λύσεις Catering</a>
+          </div>
+        </article>
+      </div>
+      <button class="hero-arrow prev" type="button" id="prevHero" aria-label="Προηγούμενο">‹</button>
+      <button class="hero-arrow next" type="button" id="nextHero" aria-label="Επόμενο">›</button>
+      <div class="hero-dots" id="heroDots"></div>
+    </section>
+
+    <section class="company" id="company">
+      <div class="container split">
+        <article class="company-text reveal">
+          <h2>Αληθινός φούρνος γειτονιάς, με επαγγελματική συνέπεια</h2>
+          <p>Από το πρώτο πρωινό ψήσιμο μέχρι τις καθημερινές παραδόσεις σε επιχειρήσεις, η ομάδα μας επενδύει στην ποιότητα πρώτης ύλης, στη σταθερότητα παραγωγής και στην ανθρώπινη εξυπηρέτηση.</p>
+          <ul>
+            <li>Καθημερινή παραγωγή σε σύγχρονο εργαστήριο</li>
+            <li>Εξειδικευμένη γκάμα για horeca και retail</li>
+            <li>Γρήγορες παραδόσεις στην Αττική</li>
+          </ul>
+        </article>
+        <div class="company-media reveal">
+          <img src="https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?auto=format&fit=crop&w=1200&q=80" alt="Παραδοσιακό ψωμί" />
+        </div>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Προϊόντα</h2>
+          <p>Πλήρης σειρά αρτοσκευασμάτων για όλες τις ώρες της ημέρας.</p>
+        </div>
+        <div class="product-grid">
+          <article class="product-card reveal">
+            <img src="https://images.unsplash.com/photo-1579634781029-e90f8f80d5a8?auto=format&fit=crop&w=900&q=80" alt="Αρτοποιία" />
+            <h3>Αρτοποιία</h3>
+            <p>Χωριάτικο, πολύσπορο, προζυμένιο και ειδικά ψωμιά ημέρας.</p>
+            <a href="#contact">Περισσότερα</a>
+          </article>
+          <article class="product-card reveal">
+            <img src="https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?auto=format&fit=crop&w=900&q=80" alt="Cookies" />
+            <h3>Βουτήματα & Cookies</h3>
+            <p>Χειροποίητα βουτήματα για καφέ και καθημερινό σνακ.</p>
+            <a href="#contact">Περισσότερα</a>
+          </article>
+          <article class="product-card reveal">
+            <img src="https://images.unsplash.com/photo-1623334044303-241021148842?auto=format&fit=crop&w=900&q=80" alt="Κέικ" />
+            <h3>Κέικ</h3>
+            <p>Βανίλια, σοκολάτα, λεμόνι και εποχικές γεύσεις.</p>
+            <a href="#contact">Περισσότερα</a>
+          </article>
+          <article class="product-card reveal">
+            <img src="https://images.unsplash.com/photo-1512058564366-c9e2c0f3495f?auto=format&fit=crop&w=900&q=80" alt="Κριτσίνια" />
+            <h3>Κριτσίνια & Φρυγανιές</h3>
+            <p>Τραγανά, υγιεινά και ιδανικά για κάθε στιγμή.</p>
+            <a href="#contact">Περισσότερα</a>
+          </article>
+          <article class="product-card reveal">
+            <img src="https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=900&q=80" alt="Κουλούρια" />
+            <h3>Κουλούρια & Snacks</h3>
+            <p>Σπιτικά snacks για σχολείο, δουλειά ή on-the-go.</p>
+            <a href="#contact">Περισσότερα</a>
+          </article>
+          <article class="product-card reveal">
+            <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=900&q=80" alt="Πίτες" />
+            <h3>Πίτες Ημέρας</h3>
+            <p>Τυρόπιτα, σπανακόπιτα και special συνταγές φούρνου.</p>
+            <a href="#contact">Περισσότερα</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats" id="horeca">
+      <div class="container stats-grid reveal">
+        <article><strong>61+</strong><span>Χρόνια εμπειρίας</span></article>
+        <article><strong>1200</strong><span>Προϊόντα ημερησίως</span></article>
+        <article><strong>90</strong><span>Σημεία Horeca</span></article>
+        <article><strong>4.9/5</strong><span>Μέση αξιολόγηση</span></article>
+      </div>
+    </section>
+
+    <section class="catering" id="catering">
+      <div class="container split">
+        <div class="catering-media reveal">
+          <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1200&q=80" alt="Catering προϊόντα φούρνου" />
+        </div>
+        <article class="catering-text reveal">
+          <h2>Catering & B2B Συνεργασίες</h2>
+          <p>Ετοιμάζουμε καθημερινές παραδόσεις για ξενοδοχεία, καφέ, mini market και επιχειρήσεις εστίασης με σταθερές συνταγές και συνέπεια.</p>
+          <div class="cta-row">
+            <a class="btn btn-solid" href="#contact">Ζήτησε Εταιρική Προσφορά</a>
+            <a class="btn btn-outline" href="tel:+302106926286">Κάλεσε Τώρα</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="news" id="news">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Νέα & Προσφορές</h2>
+        </div>
+        <div class="news-grid">
+          <article class="news-card reveal">
+            <h3>Νέα σειρά πολύσπορων</h3>
+            <p>Δοκίμασε 5 νέες συνταγές με βρώμη, chia και προζύμι αργής ωρίμανσης.</p>
+          </article>
+          <article class="news-card reveal">
+            <h3>Εβδομάδα cookies</h3>
+            <p>2+1 δώρο σε επιλεγμένα χειροποίητα cookies μέχρι την Κυριακή.</p>
+          </article>
+          <article class="news-card reveal">
+            <h3>Πρωινά εταιρικά box</h3>
+            <p>Νέες λύσεις για meetings και events με παράδοση αυθημερόν.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container footer-grid">
+      <div>
+        <h3>Stacho Bakery</h3>
+        <p>Αγίου Μελετίου 120, Αθήνα</p>
+      </div>
+      <div>
+        <h4>Επικοινωνία</h4>
+        <p>+30 210 6926286</p>
+        <p>info@stachobakery.gr</p>
+      </div>
+      <div>
+        <h4>Ωράριο</h4>
+        <p>Δευ - Σαβ: 05:00 - 21:00</p>
+        <p>Κυριακή: 07:00 - 16:00</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Φαρμακείο e-shop template με κατηγορίες, προσφορές και online αγορά." />
+  <title>Pharmacy 295 Style | Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container top-nav">
+      <button class="menu-btn" id="menuBtn" aria-label="Άνοιγμα μενού">☰</button>
+      <a class="logo" href="#home"><span>Pharmacy</span><strong>295</strong></a>
+
+      <div class="search-wrap">
+        <input type="search" placeholder="Τι ψάχνεις σήμερα;" aria-label="Αναζήτηση προϊόντων" />
+        <button aria-label="Αναζήτηση">🔍</button>
+      </div>
+
+      <button class="track-btn">📦 Πού είναι η παραγγελία μου;</button>
+
+      <div class="icon-actions">
+        <button aria-label="Αγαπημένα">♡</button>
+        <button aria-label="Καλάθι" id="openCart">🛒 <span id="cartCount">0</span></button>
+        <button aria-label="Λογαριασμός">👤</button>
+      </div>
+    </div>
+
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="#categories">Κατηγορίες</a>
+      <a href="#products">Προσφορές</a>
+      <a href="#community">Community</a>
+      <a href="#contact">Επικοινωνία</a>
+    </nav>
+
+    <div class="chips-row">
+      <div class="container chips" id="chips">
+        <button class="chip active">Τελευταία Τεμάχια</button>
+        <button class="chip">αντιγήρανση</button>
+        <button class="chip">σαμπουάν</button>
+        <button class="chip">βρεφικά αφρόλουτρα</button>
+        <button class="chip">ενίσχυση ανοσοποιητικού</button>
+        <button class="chip">ρινική αποσυμφόρηση</button>
+        <button class="chip">Korean</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-banner reveal visible">
+          <div class="hero-copy">
+            <span class="pill">Happy Easter</span>
+            <h1>Τα απαραίτητα για τις Πασχαλινές διακοπές</h1>
+            <a href="#products" class="hero-btn">Βρες τα όλα εδώ →</a>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="note">✔ αντηλιακά<br />✔ αντικουνουπικά<br />✔ φαρμακείο<br />✔ after bite<br />✔ γάλατα<br />✔ πάνες</div>
+            <div class="sun">…και ΦΥΓΑΜΕ!</div>
+            <div class="car"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products-wrap" id="products">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Νέες προσφορές τώρα διαθέσιμες</h2>
+        </div>
+
+        <div class="product-row" id="productRow"></div>
+      </div>
+    </section>
+
+    <section class="categories" id="categories">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Διάλεξε κατηγορία</h2>
+        </div>
+        <div class="category-grid">
+          <article class="cat-card reveal c1"><h3>Πρόσωπο</h3><p>Κρέμες, καθαρισμός, αντιηλιακά</p></article>
+          <article class="cat-card reveal c2"><h3>Σώμα</h3><p>Κρέμες, ευαίσθητη περιοχή, σύσφιξη</p></article>
+          <article class="cat-card reveal c3"><h3>Γονείς & Παιδί</h3><p>Διατροφή μωρού, πάνες, φροντίδα</p></article>
+          <article class="cat-card reveal c4"><h3>Φαρμακείο</h3><p>Βήχας, γρίπη, διαχείριση πόνου</p></article>
+          <article class="cat-card reveal c5"><h3>Συμπληρώματα</h3><p>Βιταμίνες, προβιοτικά, μέταλλα</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div class="container benefit-grid reveal">
+        <article><h3>Δωρεάν Click & Collect</h3><p>Παραλαβή μέσα σε λίγες ώρες από συνεργαζόμενο κατάστημα.</p></article>
+        <article><h3>Ταχύτατες Παραδόσεις</h3><p>Παράδοση αυθημερόν σε επιλεγμένες περιοχές Αττικής.</p></article>
+        <article><h3>14 Ημέρες Επιστροφή</h3><p>Αν δεν μείνεις ικανοποιημένος, επιστροφή χωρίς ταλαιπωρία.</p></article>
+        <article><h3>6 Άτοκες Δόσεις</h3><p>Για μεγαλύτερες αγορές με κάρτα και πλήρη ευελιξία.</p></article>
+      </div>
+    </section>
+
+    <section class="community" id="community">
+      <div class="container reveal">
+        <p class="avatars">👩‍⚕️ 👨‍⚕️ 👩 👨 👩‍🦰</p>
+        <h2>Έλα στην παρέα του Pharmacy295</h2>
+        <p>Προσφορές • Δώρα • Διαγωνισμοί • VIP Events • Κουπόνια</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <section>
+        <h4>Προϊόντα</h4>
+        <a href="#">Συμπληρώματα</a>
+        <a href="#">Πρόσωπο</a>
+        <a href="#">Σώμα</a>
+        <a href="#">Γονείς & Παιδί</a>
+      </section>
+      <section>
+        <h4>Εταιρεία</h4>
+        <a href="#">Ποιοι είμαστε</a>
+        <a href="#">Ευκαιρίες καριέρας</a>
+        <a href="#">Εταιρική υπευθυνότητα</a>
+      </section>
+      <section>
+        <h4>Online αγορές</h4>
+        <a href="#">Ο λογαριασμός μου</a>
+        <a href="#">Τρόποι παραγγελίας</a>
+        <a href="#">Τρόποι πληρωμής</a>
+      </section>
+      <section>
+        <h4>Εξυπηρέτηση πελατών</h4>
+        <a href="#">Πορεία παραγγελίας</a>
+        <a href="#">Επικοινωνία</a>
+        <a href="#">Βοήθεια / FAQ</a>
+      </section>
+    </div>
+  </footer>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Καλάθι">
+    <header>
+      <h3>Το καλάθι σου</h3>
+      <button id="closeCart" aria-label="Κλείσιμο">✕</button>
+    </header>
+    <div class="cart-list" id="cartList"></div>
+    <div class="cart-total">
+      <p><span>Σύνολο:</span><strong id="cartTotal">0.00€</strong></p>
+      <button id="checkoutBtn">Ολοκλήρωση αγοράς</button>
+      <p id="checkoutMsg"></p>
+    </div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

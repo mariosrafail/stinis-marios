@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Coffee brand template με online παραγγελία, καλάθι και checkout εμπειρία." />
+  <title>Urban Roast Lab | Cafe Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <nav>
+        <a href="#">BLOG</a>
+        <a href="#contact">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+        <a href="#order">WISHLIST</a>
+      </nav>
+      <div class="topbar-right">
+        <a href="tel:+302101112233">📞 210 1112233</a>
+        <span>🇬🇷 ΕΛΛΗΝΙΚΑ</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-row">
+      <a class="logo" href="#home">urban <span>roast</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Άνοιγμα μενού">☰</button>
+      <nav class="main-nav" id="mainNav">
+        <a href="#about">Η ΕΤΑΙΡΙΑ</a>
+        <a href="#menu">ΚΑΤΑΛΟΓΟΣ</a>
+        <a href="#stats">ΚΑΤΑΣΤΗΜΑΤΑ</a>
+        <a href="#order">ΠΑΡΑΓΓΕΛΙΑ</a>
+        <a href="#contact">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+      </nav>
+      <a class="header-cta" href="#order">Παράγγειλε τώρα</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid">
+        <article class="hero-left reveal visible">
+          <h1>START</h1>
+          <p>ΕΧΕΙΣ ΠΑΘΟΣ ΓΙΑ ΚΑΦΕ ΚΑΙ ΘΕΛΕΙΣ ΕΜΠΕΙΡΙΑ ΠΟΥ ΞΕΧΩΡΙΖΕΙ ΚΑΘΕ ΜΕΡΑ.</p>
+          <a href="#order" class="hero-btn">Μάθε περισσότερα</a>
+        </article>
+        <article class="hero-right reveal">
+          <h2>Ο ΚΑΦΕΣ ΣΟΥ, ΣΤΟ ΕΠΟΜΕΝΟ ΕΠΙΠΕΔΟ</h2>
+          <p>Specialty blends, γρήγορη εξυπηρέτηση και online παραγγελία με καθαρό urban coffee branding.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="stats" id="stats">
+      <div class="container stats-grid reveal">
+        <article><strong data-target="221">0</strong><span>καταστήματα</span><p>Συνεχής ανάπτυξη σε Ελλάδα και εξωτερικό.</p></article>
+        <article><strong data-target="21">0</strong><span>επιλογές καφέ</span><p>Blends, μονοποικιλιακοί, φίλτρου, decaf και ελληνικός.</p></article>
+        <article><strong data-target="5">0</strong><span>μέθοδοι</span><p>Διάλεξε τον τρόπο εκχύλισης που σου ταιριάζει.</p></article>
+        <article><strong data-target="45">0</strong><span>βραβεία</span><p>Διακρίσεις για ποιότητα προϊόντων και εμπειρία πελάτη.</p></article>
+      </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>ΑΠΟΛΑΥΣΤΙΚΑ ΡΟΦΗΜΑΤΑ</h2>
+          <p>Freddo, φίλτρου, σοκολάτες και αρωματικά ροφήματα με signature αισθητική.</p>
+        </div>
+        <div class="menu-grid">
+          <article class="drink-card reveal"><div class="blob b1"></div><h3>FREDDO</h3><p>Ισορροπημένη ένταση, βελούδινη υφή.</p></article>
+          <article class="drink-card reveal"><div class="blob b2"></div><h3>ΚΑΦΕΣ ΦΙΛΤΡΟΥ</h3><p>Αρωματικός και καθαρός χαρακτήρας.</p></article>
+          <article class="drink-card reveal"><div class="blob b3"></div><h3>ΖΕΣΤΗ ΣΟΚΟΛΑΤΑ</h3><p>Πλούσια γεύση με απαλή υφή.</p></article>
+          <article class="drink-card reveal"><div class="blob b4"></div><h3>ΤΣΑΪ</h3><p>Μεγάλη ποικιλία σε premium blends.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="order-section" id="order">
+      <div class="container order-layout">
+        <div class="order-main reveal">
+          <div class="section-head compact">
+            <h2>Παραγγελία Online</h2>
+            <p>Τύπου efood flow: διάλεξε προϊόν, πρόσθεσε στο καλάθι, ολοκλήρωσε στοιχεία.</p>
+          </div>
+
+          <div class="tabs" id="tabs">
+            <button class="tab active" data-cat="coffee">Καφές</button>
+            <button class="tab" data-cat="drinks">Ροφήματα</button>
+            <button class="tab" data-cat="snacks">Snacks</button>
+          </div>
+
+          <div class="product-grid" id="productGrid"></div>
+        </div>
+
+        <aside class="cart-panel reveal" id="cartPanel">
+          <h3>Το καλάθι σου</h3>
+          <div class="cart-items" id="cartItems"></div>
+
+          <div class="cart-summary">
+            <p><span>Υποσύνολο</span><strong id="subtotal">0.00€</strong></p>
+            <p><span>Delivery</span><strong id="delivery">2.20€</strong></p>
+            <p class="total"><span>Σύνολο</span><strong id="total">2.20€</strong></p>
+          </div>
+
+          <form id="checkoutForm" class="checkout-form">
+            <input type="text" id="customerName" placeholder="Όνομα" required />
+            <input type="tel" id="customerPhone" placeholder="Τηλέφωνο" required />
+            <input type="text" id="customerAddress" placeholder="Διεύθυνση" required />
+            <button type="submit">Ολοκλήρωση Παραγγελίας</button>
+            <p id="orderMessage"></p>
+          </form>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-inner">
+      <p>© 2026 Urban Roast Lab Demo | Stinis Digital</p>
+      <a href="#home">Πίσω πάνω</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
